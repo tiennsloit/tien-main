@@ -6,7 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tiến S. Nguyễn </title>
+    <link href="https://vjs.zencdn.net/8.3.0/video-js.css" rel="stylesheet" />
+   
   <style>
+
+
     h1, h2, h3, h4, h5, h6 {
     
     padding-bottom: 10px;
@@ -60,7 +64,10 @@
     p {
         font-size: 1.3rem;
     }
+
+
     }
+  
   </style>
 </head>
 <body>
@@ -68,6 +75,38 @@
     <h1>Welcome and thanks for reaching out!</h1>
     <h2>I am working on a new website.</h2>
     <p>If you have any inquiries about my work, please contact me on <a href="https://www.upwork.com/freelancers/tiensongnguyen">upwork.com</a>.</p>
+    <div>
+      <video
+    id="intro-video"
+    class="video-js vjs-16-9"
+    controls
+    preload="auto"
+    width="640"    
+    data-setup='{ "responsive": true, "techOrder": ["youtube"], "sources": [{ "type": "video/youtube", "src": "https://youtu.be/NaP_G5zyz_M"}] }'
+  >
+    <!-- <source src="https://youtu.be/NaP_G5zyz_M" type="video/youtube" />
+
+    <p class="vjs-no-js">
+      To view this video please enable JavaScript, and consider upgrading to a
+      web browser that
+      <a href="https://videojs.com/html5-video-support/" target="_blank"
+        >supports HTML5 video</a
+      >
+    </p> -->
+  </video>
+    </div>
   </div>
+  <script src="https://vjs.zencdn.net/8.3.0/video.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-youtube/3.0.1/Youtube.min.js"></script>
+  <!-- <script type="text/javascript">
+    var player = videojs('intro-video', {
+  techOrder: ["youtube"], // Specify that YouTube should be the preferred tech for playing the video
+  sources: [{
+    src: 'https://youtu.be/NaP_G5zyz_M',
+    type: 'video/youtube'
+  }],
+  // You can add more customization options here
+});
+  </script> -->
 </body>
 </html>
